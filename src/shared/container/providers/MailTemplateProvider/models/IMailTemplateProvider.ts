@@ -2,6 +2,6 @@
 
 import IParseMailTemplateDTO from '../dtos/IParseMailTemplateDTO';
 
-export default interface IMailTempleteProvider {
+export default interface IMailTemplateProvider {
   parse(data: IParseMailTemplateDTO): Promise<string>;
 }
