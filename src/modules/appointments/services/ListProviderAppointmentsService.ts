@@ -42,11 +42,8 @@ class ListProviderAppointmentsService {
         },
       );
 
-      console.log('Bringed from database');
-
       await this.cacheProvider.save(cacheKey, appointments);
     }
-    console.log(appointments);
     return appointments;
   }
 }
